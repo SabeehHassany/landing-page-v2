@@ -1,0 +1,1058 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Sabeeh</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <!--cdncss link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/lightbox.min.css">
+
+  <!--style sheet-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!-- SVG Icons for the Website -->
+  <svg>
+    <!-- Icons for header links (Twitter, LinkedIn, GitHub, Medium) -->
+    <!-- Twitter Icon -->
+    <symbol id="twitter" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M23.5 1.7l-9.2 9.9 9.2 10.5h-4.3L12 14l-7.2 8.1H.5L9.6 11 0 1.7h4.3L12 9.6 18.7 1.7z" />
+    </symbol>
+
+    <!-- LinkedIn Icon -->
+    <symbol id="linkedin-logo" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M20.447 20.452h-3.554v-5.396c0-1.287-.025-2.945-1.796-2.945-1.796 0-2.07 1.403-2.07 2.85v5.491H9.473V9h3.414v1.561h.048c.476-.899 1.635-1.848 3.367-1.848 3.599 0 4.265 2.366 4.265 5.448v6.29h-.02zm-15.72-11.91c-1.145 0-2.07-.927-2.07-2.072 0-1.144.926-2.071 2.07-2.071s2.071.927 2.071 2.071c0 1.145-.926 2.072-2.071 2.072zm1.779 11.91H3.948V9h3.559v11.452h-.001zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.98 0 1.778-.774 1.778-1.729V1.729C24 .774 23.202 0 22.222 0z" />
+    </symbol>
+
+    <!-- GitHub Icon -->
+    <symbol id="github" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M10.07 20.503a1 1 0 0 0-1.18-.983c-1.31.24-2.963.276-3.402-.958a5.708 5.708 0 0 0-1.837-2.415a1.2 1.2 0 0 1-.167-.11a1 1 0 0 0-.93-.645h-.005a1 1 0 0 0-1 .995c-.004.815.81 1.338 1.141 1.514a4.44 4.44 0 0 1 .924 1.36c.365 1.023 1.423 2.576 4.466 2.376l.003.098l.004.268a1 1 0 0 0 2 0l-.005-.318c-.005-.19-.012-.464-.012-1.182M20.737 5.377a5.39 5.39 0 0 0 .09-.42a6.278 6.278 0 0 0-.408-3.293a1.002 1.002 0 0 0-.615-.58c-.356-.12-1.67-.357-4.184 1.25a13.87 13.87 0 0 0-6.354 0C6.762.75 5.455.966 5.102 1.079a.997.997 0 0 0-.631.584a6.3 6.3 0 0 0-.404 3.357c.025.127.051.246.079.354a6.27 6.27 0 0 0-1.256 3.83a8.422 8.422 0 0 0 .043.921c.334 4.603 3.334 5.984 5.424 6.459a4.591 4.591 0 0 0-.118.4a1 1 0 0 0 1.942.479a1.678 1.678 0 0 1 .468-.878a1 1 0 0 0-.546-1.745c-3.454-.395-4.954-1.802-5.18-4.899a6.61 6.61 0 0 1-.033-.738a4.258 4.258 0 0 1 .92-2.713a3.022 3.022 0 0 1 .195-.231a1 1 0 0 0 .188-1.025a3.388 3.388 0 0 1-.155-.555a4.094 4.094 0 0 1 .079-1.616a7.543 7.543 0 0 1 2.415 1.18a1.009 1.009 0 0 0 .827.133a11.777 11.777 0 0 1 6.173.001a1.005 1.005 0 0 0 .83-.138a7.572 7.572 0 0 1 2.406-1.19a4.04 4.04 0 0 1 .087 1.578a3.205 3.205 0 0 1-.169.607a1 1 0 0 0 .188 1.025c.078.087.155.18.224.268A4.122 4.122 0 0 1 20 9.203a7.039 7.039 0 0 1-.038.777c-.22 3.056-1.725 4.464-5.195 4.86a1 1 0 0 0-.546 1.746a1.63 1.63 0 0 1 .466.908a3.06 3.06 0 0 1 .093.82v2.333c-.01.648-.01 1.133-.01 1.356a1 1 0 1 0 2 0c0-.217 0-.692.01-1.34v-2.35a4.882 4.882 0 0 0-.155-1.311a4.256 4.256 0 0 0-.116-.416a6.513 6.513 0 0 0 5.445-6.424A8.697 8.697 0 0 0 22 9.203a6.13 6.13 0 0 0-1.263-3.826" />
+    </symbol>
+
+    <!-- Medium Icon -->
+    <symbol id="medium" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M4.867 7.025c.034-.38-.104-.755-.368-1.022L1.39 2.264V2h6.523l5.04 11.034 4.421-11.034H24v.264l-1.652 1.588c-.142.108-.213.28-.187.456v12.548c-.027.176.045.348.187.456l1.604 1.588v.264h-9.435v-.264l1.681-1.639c.165-.16.165-.208.165-.456V6.352l-4.691 13.445h-.631L5.722 6.352v8.957c-.046.352.07.704.32.971l2.196 2.668v.264H0v-.264l2.195-2.668c.242-.252.35-.605.292-.971V5.327a.888.888 0 0 0-.292-.716L0 2.264V2h4.108l3.157 4.631z" />
+    </symbol>
+
+    <!-- Icons for "About Me" Section (Monitor, Notes, Laptop) -->
+    <!-- Monitor Icon -->
+    <symbol id="monitor" viewBox="0 0 24 24">
+      <path fill="#4ba1a7"
+        d="M19 2H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h2.64l-.58 1a2 2 0 0 0 0 2a2 2 0 0 0 1.75 1h6.46A2 2 0 0 0 17 21a2 2 0 0 0 0-2l-.59-1H19a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3M8.77 20L10 18h4l1.2 2ZM20 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16Zm0-3H4V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z" />
+    </symbol>
+
+    <!-- Notes Icon -->
+    <symbol id="notes" viewBox="0 0 24 24">
+      <path fill="#4ba1a7"
+        d="M16 14H8a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2m0-4h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2m4-6h-3V3a1 1 0 0 0-2 0v1h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H4a1 1 0 0 0-1 1v14a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V5a1 1 0 0 0-1-1m-1 15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6h2v1a1 1 0 0 0 2 0V6h2v1a1 1 0 0 0 2 0V6h2v1a1 1 0 0 0 2 0V6h2Z" />
+    </symbol>
+
+    <!-- Laptop Icon -->
+    <symbol id="laptop" viewBox="0 0 24 24">
+      <path fill="#4ba1a7"
+        d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1M6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16Z" />
+    </symbol>
+
+    <!-- Menu Icon for Navigation Toggle -->
+    <symbol id="menu" viewBox="0 0 24 24">
+      <path fill="black"
+        d="M4 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 12a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m7-7a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z" />
+    </symbol>
+  </svg>
+
+<!-- Navigation and Links Icon Website -->
+  <header id="top" class="position-sticky top-0 start-0" style="z-index:10;">
+    
+    <!-- Navbar Section -->
+    <nav class="navbar bg-white fixed-top">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center g-4">
+          <!-- Logo Section -->
+          <a class="navbar-brand d-flex" href="index.html">
+            <img src="images/logo.png" class="img-fluid" id="logo" width="110" height="126">
+          </a>
+
+          <!-- Social Media Icons (Twitter, LinkedIn, GitHub) -->
+          <div class="icon px-5">
+            <a href="https://x.com" class="text-decoration-none">
+              <svg class="twitter" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/sabeehh/" class="text-decoration-none">
+              <svg class="linkedin-logo" width="24" height="24">
+                <use xlink:href="#linkedin-logo"></use>
+              </svg>
+            </a>
+            <a href="https://github.com/SabeehHassany" class="text-decoration-none">
+              <svg class="github" width="24" height="24">
+                <use xlink:href="#github"></use>
+              </svg>
+            </a>
+            <a href="https://medium.com/@sabeehhassany" class="text-decoration-none">
+              <svg class="medium" width="24" height="24">
+                <use xlink:href="#medium"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+    
+        <!-- Navbar Toggler (Menu Button) -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navabar-toggler-icon">
+            <svg class="text-primary menu" width="32" height="32">
+              <use xlink:href="#menu"></use>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Sidebar Menu (Offcanvas) -->
+        <div class="offcanvas offcanvas-end text-white bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <!-- Close Button for Sidebar -->
+            <button type="button" class="btn-close btn-close-white ms-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <!-- Sidebar Navigation Links -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 p-4">
+              <li class="nav-item">
+                <a class="nav-link active text-uppercase ls-4 text-white" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase ls-4 text-white" href="about.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase ls-4 text-white" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase ls-4 text-white" href="resume.html">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<!-- Landing Page First Image Section -->
+  <section>
+    <!-- Container to hold the banner and content -->
+    <div class="container">
+      
+      <!-- Banner with background image -->
+      <div class="banner rounded-4 p-5"
+        style="background-image: url(images/banner1.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+        
+        <!-- Text content inside the banner -->
+        <div class="text-content text-white py-5 my-5">
+          <!-- Brief description or tagline -->
+          <p class="fs-4">
+            ML and Neurotech Developer
+          </p>
+          
+          <!-- Main heading (Name) -->
+          <h1 class="display-1">
+            Sabeeh <br> Hassany
+          </h1>
+        </div>
+        <!-- number displays with experience and what not
+        <div class="row text-uppercase bg-black rounded-4 p-3 mt-5">
+          <div class="col-md-3">
+            <div class="d-flex align-items-center gap-4">
+              <h2 class="display-2 text-light">
+                12
+              </h2>
+              <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                Years of <br> experience
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex align-items-center gap-4">
+              <h2 class="display-2 text-light">
+                820
+              </h2>
+              <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                satisfied <br> clients
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex align-items-center gap-4">
+              <h2 class="display-2 text-light">
+                720
+              </h2>
+              <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                employees <br> worldwide
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex align-items-center gap-4">
+              <h2 class="display-2 text-light">
+                2200
+              </h2>
+              <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                projects completed
+              </p>
+            </div>
+          </div>
+        </div>
+        -->
+      </div> <!-- End of banner -->
+    
+    </div> <!-- End of container -->
+  </section>
+
+<!-- About Me + Blurb Section -->
+  <section class="portfolio py-5">
+    <div class="container"> 
+      
+      <!-- Section Header with About Me title -->
+      <div class="justify-content-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="section-header text-center">
+              
+              <!-- About Me Title -->
+              <h2 class="display-3">
+                About Me
+              </h2>
+            </div> <!-- End of section-header -->
+          </div> <!-- End of col-lg-4 -->
+        </div> <!-- End of row -->
+      </div> 
+
+      <!-- Blurb -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="text-center">
+            <!-- Sub-heading or blurb about the individual's mission/vision -->
+            <h4 class="fw-bold fs-2 txt-fx slide-up">
+              My goal is to use AI and neurotechnology to create solutions that 
+              transform industries and empower communities through scalable innovations.
+            </h4>
+        </div>
+      </div>
+  </section>
+
+<!-- 3 Icons Section: AI/ML, Neurotechnology, Leadership -->
+  <section class="p-5">
+    <div class="container">
+      
+      <!-- Row for three icon sections -->
+      <div class="row justify-content-center">
+        
+        <!-- AI/ML Icon and Text -->
+        <div class="col-lg-3">
+          <div class="d-flex gap-4 align-items-start">
+            
+            <!-- AI/ML Icon -->
+            <div class="icon">
+              <svg class="text-primary monitor" width="50" height="50">
+                <use xlink:href="#monitor"></use>
+              </svg>
+            </div>
+            
+            <!-- AI/ML Title and Description -->
+            <div class="text-md-start">
+              <h5>
+                AI/ML
+              </h5>
+              <p class="postf">
+                Building data-driven models to solve real-world problems.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Neurotechnology Icon and Text -->
+        <div class="col-lg-3">
+          <div class="d-flex gap-4 align-items-start">
+            
+            <!-- Neurotechnology Icon -->
+            <div class="icon">
+              <svg class="text-primary notes" width="50" height="50">
+                <use xlink:href="#notes"></use>
+              </svg>
+            </div>
+            
+            <!-- Neurotechnology Title and Description -->
+            <div class="text-md-start">
+              <h5>
+                Neurotechnology
+              </h5>
+              <p class="postf">
+                Innovating in brain-computer interfaces and neuroimaging.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Leadership Icon and Text -->
+        <div class="col-lg-3">
+          <div class="d-flex gap-4 align-items-start">
+            
+            <!-- Leadership Icon -->
+            <div class="icon">
+              <svg class="text-primary laptop" width="50" height="50">
+                <use xlink:href="#laptop"></use>
+              </svg>
+            </div>
+            
+            <!-- Leadership Title and Description -->
+            <div class="text-md-start">
+              <h5>
+                Leadership
+              </h5>
+              <p class="postf">
+                Guiding teams to achieve impactful results.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </div> <!-- End of row -->
+    </div> <!-- End of container -->
+  </section> <!-- End of section -->
+
+<!-- Education, Experience, Interests -->
+  <section>
+    <div class="container">
+      <div class="row">
+        
+        <!-- Education Section -->
+        <div class="col-lg-4">
+          <div class="h-100 bg-yellow p-4 rounded-4">
+            <h3>Education</h3>
+            <div class="py-4">
+              <p class="text-dark-emphasis">2021 - 2024</p>
+              <h5>Bachelors in Computer Science & Neuroscience w/ Concentration in ML</h5>
+              <p class="text-dark-emphasis">Boston College</p>
+              <p class="text-dark-emphasis">ML Contrastive Learning Research w/ Dr.Anzellotti</p>
+              <p class="text-dark-emphasis">Vice-President, Machine Intelligence Group </p>
+              <p class="text-dark-emphasis">President, MSA</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="col-lg-4">
+          <div class="h-100 bg-green p-4 rounded-4">
+            <h3>Experience</h3>
+            <div class="py-4">
+              <p class="text-dark-emphasis">Summer 2023</p>
+              <h5>Fullstack Software Engineer Intern</h5>
+              <p class="text-dark-emphasis">Frenalytics</p>
+              <p class="text-dark-emphasis">
+                Developed backend architecture and improved on front-end features for an online rehabilitation platform.
+              </p>
+            </div>
+            <p class="text-dark-emphasis">2020 - Present</p>
+            <h5>5x Internships at NuCalm, Illumina, Kidogo & More</h5>
+            <p class="text-dark-emphasis">
+              Worked on a variety of roles, from consulting on digital strategies to designing systems for tech solutions
+              in healthcare, education, and social enterprises.
+            </p>
+          </div>
+        </div>
+
+        <!-- Interests Section -->
+        <div class="col-lg-4">
+          <div class="h-100 bg-teal p-4 rounded-4">
+            <h3>Interests</h3>
+            <div class="py-4">
+            <ul class="text-dark-emphasis interests-list">
+              <li>The <strong>intersection</strong> of brain science with AI and machine learning.</li>
+              <li>Neuroimagingand early detection of <strong>neurodegenerative disorders</strong>.</li>
+              <li>Single-cell analysis for early-stage <strong>Alzheimer's disease</strong>.</li>
+              <li>Machine learningwith a focus on <strong>ethical and human-centered</strong> decision-making.</li>
+              <li><strong>Leading teams</strong> to build <strong>scalable systems</strong> that solve complex, impactful problems.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Portfolio Section -->
+  <section class="portfolio py-5">
+    <div class="container">
+      
+      <!-- Portfolio Title and Description -->
+      <div class="justify-content-center">
+        <div class="row justify-content-center">
+          <div class="text-center">
+            <!-- Section Title -->
+            <h2 class="display-3">Portfolio</h2>
+          </div>
+        </div>
+
+        <!-- Portfolio Filters (All, Machine Learning, Neuro, FullStack, Articles) -->
+        <div id="filters" class="button-group d-flex flex-wrap gap-3 justify-content-center py-5" data-aos="fade-up">
+          <!-- 'All' filter that shows all portfolio items -->
+          <a href="#" class="btn btn-primary text-decoration-none text-uppercase is-checked" data-filter="*">All</a>
+          <a href="#" class="btn btn-primary text-decoration-none text-uppercase" data-filter=".machinelearning">Machine Learning</a>
+          <a href="#" class="btn btn-primary text-decoration-none text-uppercase" data-filter=".neuro">Neuro</a>
+          <a href="#" class="btn btn-primary text-decoration-none text-uppercase" data-filter=".fullstack">FullStack</a>
+          <a href="#" class="btn btn-primary text-decoration-none text-uppercase" data-filter=".articles">Articles</a>
+        </div>
+      </div>
+
+      <!-- Portfolio Grid Layout -->
+      <div class="grid p-0 clearfix row row-cols-2 row-cols-lg-3 row-cols-xl-4" data-aos="fade-up">
+        
+        <!-- Portfolio Item 11 (Watson AI Multi Agent - Machine Learning) -->
+        <div class="col mb-4 portfolio-item machinelearning">
+          <a href="https://github.com/SabeehHassany/WatsonAIMultiAgent" target="_blank">
+            <img src="images/watsonai.png" class="img-fluid rounded-4" alt="Watson AI Multi Agent">
+            <h5 class="text-center mt-2">Watson AI Multi Agent</h5>
+          </a>
+        </div>
+
+        <!-- Portfolio Item 7 (RAG Review AI Assistant - Machine Learning, Full Stack) -->
+        <div class="col mb-4 portfolio-item machinelearning fullstack">
+          <a href="https://github.com/SabeehHassany/RateMyProf-AI-Assistant" target="_blank">
+            <img src="images/rmp.png" class="img-fluid rounded-4" alt="RAG Review AI Assistant">
+            <h5 class="text-center mt-2">RAG Review AI Assistant</h5>
+          </a>
+        </div>
+
+        <!-- Portfolio Item 10 (Live Customer Churn Prediction - Machine Learning, Full Stack) -->
+        <div class="col mb-4 portfolio-item machinelearning fullstack">
+          <a href="https://github.com/SabeehHassany/Churn-Prediction" target="_blank">
+            <img src="images/churn.png" class="img-fluid rounded-4" alt="Live Customer Churn Prediction">
+            <h5 class="text-center mt-2">Live Customer Churn Prediction</h5>
+          </a>
+        </div>
+
+        <!-- Portfolio Item 3 (Q-Learning Tetris Bot) -->
+        <div class="col mb-4 portfolio-item machinelearning">
+          <a href="https://github.com/pluto-0/Tetris" target="_blank">
+            <img src="images/qlearn.png" class="img-fluid rounded-4" alt="Q-Learning Tetris Bot">
+            <h5 class="text-center mt-2">Q-Learning Tetris Bot</h5>
+          </a>
+        </div>
+
+        <!-- Portfolio Item 9 (Jots App - Full Stack) -->
+        <div class="col mb-4 portfolio-item fullstack">
+          <a href="https://github.com/SabeehHassany/Jots-App" target="_blank">
+            <img src="images/jots.png" class="img-fluid rounded-4" alt="Jots App">
+            <h5 class="text-center mt-2">Jots App</h5>
+          </a>
+        </div>
+
+        <!-- Portfolio Item 8 (Python ML Trading Bot - Machine Learning) -->
+        <div class="col mb-4 portfolio-item machinelearning">
+          <a href="https://github.com/SabeehHassany/Python-MLTradingBot" target="_blank">
+            <img src="images/mltrader.png" class="img-fluid rounded-4" alt="Python ML Trading Bot">
+            <h5 class="text-center mt-2">Python ML Trading Bot</h5>
+          </a>
+        </div>
+
+        <!-- Portfolio Item 12 (Pantry Tracker - Full Stack) -->
+        <div class="col mb-4 portfolio-item fullstack">
+          <a href="https://github.com/SabeehHassany/PantryTracker" target="_blank">
+            <img src="images/pantry.png" class="img-fluid rounded-4" alt="Pantry Tracker">
+            <h5 class="text-center mt-2">Pantry Tracker</h5>
+          </a>
+        </div>
+
+        <!-- Portfolio Item 2 (ML Spotify Hit Classifier) -->
+        <div class="col mb-4 portfolio-item machinelearning">
+          <a href="https://drive.google.com/drive/folders/18LRzVjicdiRsg00xcNzhFxLBMOmsFQkf?usp=sharing" target="_blank">
+            <img src="images/ensemble.png" class="img-fluid rounded-4" alt="ML Spotify Hit Classifier">
+            <h5 class="text-center mt-2">ML Spotify Hit Classifier</h5>
+          </a>
+        </div>
+
+        <!-- Portfolio Item 1 (fMRI Dementia Detector) -->
+        <div class="col mb-4 portfolio-item machinelearning neuro">
+          <a href="https://drive.google.com/drive/folders/1uJmWYuDnOXFJHl1SGbIppyyMHM9K-l8j?usp=sharing" target="_blank">
+            <img src="images/resnet.jpg" class="img-fluid rounded-4" alt="fMRI Dementia Detector">
+            <h5 class="text-center mt-2" >fMRI Dementia Detector</h5>
+          </a>
+        </div>
+
+        <!-- Portfolio Item 4 (Contrastive Image Learning) -->
+        <div class="col mb-4 portfolio-item machinelearning neuro">
+          <a href="https://docs.google.com/document/d/1BTTlscEOFrPYcqo3ZfG9YA2DNb9qc0cExE1xcM1GZIs/edit?usp=sharing" target="_blank">
+            <img src="images/of_model.png" class="img-fluid rounded-4" alt="Contrastive Image Learning with Spatiotemporality">
+            <h5 class="text-center mt-2">Contrastive Image Learning with Spatiotemporality</h5>
+          </a>
+        </div>
+
+        <!-- Portfolio Item 5 (Muse EEG Python Projects) -->
+        <div class="col mb-4 portfolio-item neuro">
+          <a href="https://github.com/SabeehHassany/museEEG" target="_blank">
+            <img src="images/muse_eeg.png" class="img-fluid rounded-4" alt="Muse EEG Python Projects">
+            <h5 class="text-center mt-2">Muse EEG Python Projects</h5>
+          </a>
+        </div>
+
+        <!-- Portfolio Item 6 (Assorted Scikit-Learn Data Science Models) -->
+        <div class="col mb-4 portfolio-item machinelearning neuro">
+          <a href="https://github.com/SabeehHassany/Email-Spam-Detector-DecTreeClass" target="_blank">
+            <img src="images/scikit.jpg" class="img-fluid rounded-4" alt="Assorted Scikit-Learn Data Science Models">
+            <h5 class="text-center mt-2">Assorted Scikit-Learn Data Science Models</h5>
+          </a>
+        </div>
+        
+        <!-- Portfolio Item 13 (ASAP Guide to Linear Regression - Machine Learning) -->
+        <div class="col mb-4 portfolio-item articles machinelearning">
+          <a href="https://medium.datadriveninvestor.com/asap-guide-to-linear-regression-fda841656fbd" target="_blank">
+            <img src="images/linreg.png" class="img-fluid rounded-4" alt="ASAP Guide to Linear Regression">
+            <h5 class="text-center mt-2">ASAP Guide to Linear Regression</h5>
+          </a>
+        </div>
+
+        <!-- Portfolio Item 14 (The Difference between a ML Algorithm and ML Model - Machine Learning) -->
+        <div class="col mb-4 portfolio-item articles machinelearning">
+          <a href="https://medium.datadriveninvestor.com/difference-between-an-machine-learning-algorithm-and-model-14879f4aec7b" target="_blank">
+            <img src="images/algo.webp" class="img-fluid rounded-4" alt="The Difference between a ML Algorithm and ML Model">
+            <h5 class="text-center mt-2">The Difference between a ML Algorithm and ML Model</h5>
+          </a>
+        </div>
+
+        <!-- Portfolio Item 15 (How My Computer Copies a Baby - Machine Learning) -->
+        <div class="col mb-4 portfolio-item articles machinelearning">
+          <a href="https://medium.datadriveninvestor.com/how-my-computer-copies-a-baby-machine-learning-types-5ffc8add6b31" target="_blank">
+            <img src="images/mltypes.png" class="img-fluid rounded-4" alt="How My Computer Copies a Baby">
+            <h5 class="text-center mt-2">How My Computer Copies a Baby</h5>
+          </a>
+        </div>
+
+        <!-- Portfolio Item 16 (Surfing Your Brain - Neuro) -->
+        <div class="col mb-4 portfolio-item articles neuro">
+          <a href="https://medium.com/swlh/surfing-your-brain-a2908b1124" target="_blank">
+            <img src="images/surf.webp" class="img-fluid rounded-4" alt="Surfing Your Brain">
+            <h5 class="text-center mt-2">Surfing Your Brain</h5>
+          </a>
+        </div>
+
+        <!-- Portfolio Item 17 (Navigating Neural Waves in the Cerebrum - Neuro) -->
+        <div class="col mb-4 portfolio-item articles neuro">
+          <a href="https://medium.com/@sabeehhassany/navigating-the-neural-waves-of-the-human-cerebrum-85de0cee7fa3" target="_blank">
+            <img src="images/waves.webp" class="img-fluid rounded-4" alt="Navigating Neural Waves in the Cerebrum">
+            <h5 class="text-center mt-2">Navigating Neural Waves in the Cerebrum</h5>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- Resume Section -->
+  <section id="resume" class="portfolio py-5">
+    <div class="container">
+    <!-- Resume Title and Description -->
+      <div class="justify-content-center">
+        <div class="row justify-content-center">
+          <div class="text-center">
+            <!-- Section Title -->
+            <h2 class="display-3">Resume</h2>
+            <p></p>
+          </div>
+        </div>
+
+      <!-- Embed Resume PDF -->
+      <div class="text-center">
+        <iframe src="images/resume.pdf" style="width:80%; height:600px;" frameborder="0"></iframe>
+      </div>
+
+      <!-- Email Contact Information -->
+      <h5 class="text-center mt-4">Reach out via email: sabeehhassany@gmail.com</h5>
+
+      <!-- LinkedIn Connect Button -->
+      <div class="text-center mt-3">
+        <a href="https://www.linkedin.com/in/sabeeh-hassany" class="linkedin-button">Connect on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+<!-- Refrences
+  <section class="py-5">
+    <div class="container">
+      <div class="rounded-4 p-5"
+        style="background-image: url(images/section-banner.png); background-size: cover ; background-repeat: no-repeat; background-position: center;">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="h-100 bg-black text-white p-4 rounded-4">
+              <h3>
+                References
+              </h3>
+              <div class="py-4">
+                <p class="text-light-emphasis">
+                  1998 - 2004
+                </p>
+                <h5>
+                  Dr. Stephen H. King
+                </h5>
+                <p class="text-light-emphasis">
+                  Harvard School of Science and management
+                </p>
+              </div>
+              <p class="text-light-emphasis">
+                2004 - 2006
+              </p>
+              <h5>
+                Dr. David Howard
+              </h5>
+              <p class="text-light-emphasis">
+                Harvard School of Science and management
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+  
+<!-- Testimonials
+  <section>
+    <div class="container">
+      <div class="text-center">
+        <h2 class="display-3 mb-5">
+          Testimonials
+        </h2>
+      </div>
+
+      <div class="swiper testimonial-swiper">
+        <div class="swiper-wrapper ">
+          <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
+            <div class="text-start">
+              <p>
+                “A pellen tesque pretium feugiat vel morbi sagittis lorem habi tasse cursus. Suspen dise tempus oncu
+                enim pellen tesque est in neque, elit habi mattis.”
+              </p>
+              <h5>
+                Kevin H.
+              </h5>
+              <p class="postd">
+                8/20/2023
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
+            <div class="text-start">
+              <p>
+                “A pellen tesque pretium feugiat vel morbi sagittis lorem habi tasse cursus. Suspen dise tempus oncu
+                enim pellen tesque est in neque, elit habi mattis.”
+              </p>
+              <h5>
+                Kevin H.
+              </h5>
+              <p class="postd">
+                8/20/2023
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-card  rounded-3 py-4 px-4 swiper-slide">
+            <div class="text-start">
+              <p>
+                “A pellen tesque pretium feugiat vel morbi sagittis lorem habi tasse cursus. Suspen dise tempus oncu
+                enim pellen tesque est in neque, elit habi mattis.”
+              </p>
+              <h5>
+                Kevin H.
+              </h5>
+              <p class="postd">
+                8/20/2023
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-card bg-black rounded-3 py-4 px-4 swiper-slide">
+            <div class="text-start">
+              <p>
+                “A pellen tesque pretium feugiat vel morbi sagittis lorem habi tasse cursus. Suspen dise tempus oncu
+                enim pellen tesque est in neque, elit habi mattis.”
+              </p>
+              <h5>
+                Kevin H.
+              </h5>
+              <p class="postd">
+                8/20/2023
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-card bg-black rounded-3 py-4 px-4 swiper-slide">
+            <div class="text-start">
+              <p>
+                “A pellen tesque pretium feugiat vel morbi sagittis lorem habi tasse cursus. Suspen dise tempus oncu
+                enim pellen tesque est in neque, elit habi mattis.”
+              </p>
+              <h5>
+                Kevin H.
+              </h5>
+              <p class="postd">
+                8/20/2023
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-swiper-pagination position-relative mt-5 text-center"></div>
+      </div>
+
+    </div>
+  </section>
+-->
+
+<!-- FAQ
+  <section>
+    <div class="container">
+      <div class="text-center pt-5">
+        <h2 class="display-3">
+          FAQs
+        </h2>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-6">
+          <img src="images/illustration-6.png" class="img-fluid">
+        </div>
+        <div class="col-lg-6">
+          <div class="accordion accordion-flush" id="accordion-flush">
+            <div class="accordion-item border mb-3 rounded-3">
+              <h5 class="accordion-header">
+                <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Can I use credit cards or USD for payment?
+                </button>
+              </h5>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion-flush"" >
+                                <div class=" accordion-body">
+                <p>Et nec ipsum tincidunt ut felis elementum proin eget dignissim egestas quis velit maecenas magnis.
+                  Etiam faucibus et ultrices sit aliquet ultrices.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border mb-3 rounded-3">
+            <h5 class="accordion-header">
+              <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                What times are you available for calls?
+              </button>
+            </h5>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+              <div class="accordion-body">
+                <p>Labore accusam in modo compungi, iacentem substantiales um se sed esse haec. Labore accusam in modo
+                  compungi, iacentem substantiales um se sed esse haec.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border mb-3 rounded-3">
+            <h5 class="accordion-header">
+              <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                How do I hire you for few months?
+              </button>
+            </h5>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+              <div class="accordion-body">
+                <p>Et nec ipsum tincidunt ut felis elementum proin eget dignissim egestas quis velit maecenas magnis.
+                  Etiam faucibus et ultrices sit aliquet ultrices.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border mb-3 rounded-3">
+            <h5 class="accordion-header">
+              <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                aria-controls="collapseFour">
+                Will I get the source files of my order?
+              </button>
+            </h5>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+              <div class="accordion-body">
+                <p>Et nec ipsum tincidunt ut felis elementum proin eget dignissim egestas quis velit maecenas magnis.
+                  Etiam faucibus et ultrices sit aliquet ultrices.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border mb-3 rounded-3">
+            <h5 class="accordion-header">
+              <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                aria-controls="collapseFive">
+                Will I get the source files of my order?
+              </button>
+            </h5>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+              <div class="accordion-body">
+                <p>Et nec ipsum tincidunt ut felis elementum proin eget dignissim egestas quis velit maecenas magnis.
+                  Etiam faucibus et ultrices sit aliquet ultrices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+-->
+
+<!-- Latest News? 
+  <section class="py-5">
+    <div class="container">
+      
+      <div class="text-center">
+        <h2 class="display-3">
+          Latest News
+        </h2>
+        <p>
+          Accusan maiores alias conseaut equatur aut perferendi.
+        </p>
+      </div>
+
+      <div class="row py-4">
+        <div class="col-lg-6 p-3">
+          <div class="post-item p-3 border rounded-5">
+            <div class="row g-md-5">
+              <div class="col-lg-5">
+                <img src="images/post-thumb-1.jpg" class="img-fluid rounded-4">
+              </div>
+              <div class="col-lg-7">
+                <p class="text-uppercase text-muted mt-3">
+                  Design / Sept 12, 2022
+                </p>
+                <h3>
+                  Graphic Designing Useful Tips & Best Practices
+                </h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 p-3">
+          <div class="post-item p-3 border rounded-5">
+            <div class="row g-md-5">
+              <div class="col-lg-5">
+                <img src="images/post-thumb-2.jpg" class="img-fluid rounded-4">
+              </div>
+              <div class="col-lg-7">
+                <p class="text-uppercase text-muted mt-3">
+                  Design / Sept 12, 2022
+                </p>
+                <h3>
+                  Best way to do branding of digital products 
+                </h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 p-3">
+          <div class="post-item p-3 border rounded-5">
+            <div class="row g-md-5">
+              <div class="col-lg-5">
+                <img src="images/post-thumb-3.jpg" class="img-fluid rounded-4">
+              </div>
+              <div class="col-lg-7">
+                <p class="text-uppercase text-muted mt-3">
+                  Design / Sept 12, 2022
+                </p>
+                <h3>
+                  Top 10 graphic designs review in 2022
+                </h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 p-3">
+          <div class="post-item p-3 border rounded-5">
+            <div class="row g-md-5">
+              <div class="col-lg-5">
+                <img src="images/post-thumb-4.jpg" class="img-fluid rounded-4">
+              </div>
+              <div class="col-lg-7">
+                <p class="text-uppercase text-muted mt-3">
+                  Design / Sept 12, 2022
+                </p>
+                <h3>
+                  Graphic Designing Useful Tips & Best Practices
+                </h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="button" class="btn btn-outline-dark btn-lg mt-3 btn-color text-uppercase">
+          View All Blogs
+        </button>
+      </div>
+    </div>
+  </section>
+-->
+
+<!-- Leave a message
+  <section class="p-5 bg-yellow py-5">
+    <div class="container">
+      <div class="row justify-content-center my-5">
+        <div class="col-md-5">
+          <h6>
+            Quick Contact
+          </h6>
+          <h2 class="display-3">
+            Leave a Message
+          </h2>
+          <p>
+            Labore accusam in modo compungi, iacentem substantiales um se sed esse haec.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <div class="mb-3">
+            <input type="name" class="form-control p-3 rounded-4" name="name" id="name" aria-describedby="nameHelpId"
+              placeholder="your name" />
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control p-3 rounded-4" name="email" id="email" aria-describedby="emailHelpId"
+              placeholder="your email" />
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control p-3 rounded-4" name="your message" placeholder="your message" id="message" rows="3"></textarea>
+          </div>
+          <div class="d-grid">
+            <button type="button" class="btn btn-dark btn-lg text-uppercase rounded-4">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+
+<!-- Footer Section -->
+  <footer id="footer" class="bg-black text-white py-5">
+    <div class="container-sm">
+      
+      <!-- Main footer content with logo and subscription information -->
+      <div class="row g-md-5 my-5">
+        <div class="col-md-4">
+          <div class="info-box">
+            
+            <!-- Logo -->
+            <img src="images/logo-2.png" class="img-fluid" alt="Logo">
+            
+            <!-- Subscription prompt (Can be edited or removed if not relevant) -->
+            <p class="py-4">
+              Subscribe to my newsletter to get updates on AI, Neurotech, and personal projects.
+            </p>
+            
+            <!-- Social media links section -->
+            <div class="social-links">
+              <a href="https://x.com" class="text-decoration-none">
+                <svg class="twitter" width="24" height="24">
+                  <use xlink:href="#twitter"></use>
+                </svg>
+              </a>
+
+              <a href="https://linkedin.com/in/sabeehh/" class="text-decoration-none">
+                <svg class="github" width="24" height="24">
+                  <use xlink:href="#github"></use>
+                </svg>
+              </a>
+
+              <a href="https://github.com/SabeehHassany" class="text-decoration-none">
+                <svg class="linkedin-logo" width="24" height="24">
+                  <use xlink:href="#linkedin-logo"></use>
+                </svg>
+              </a>
+
+              <a href="https://github.com/SabeehHassany" class="text-decoration-none">
+                <svg class="medium" width="24" height="24">
+                  <use xlink:href="#medium"></use>
+                </svg>
+              </a>
+              <!-- Remove any unused icons -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Links Section -->
+        <div class="col-md-3">
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-decoration-none text-white" href="index.html"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <h6>
+                <a class="text-decoration-none text-white" href="#blog"></a>
+              </h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Info Section -->
+        <div class="col-md-5">
+          <p>
+            Feel free to reach out if you'd like to collaborate, discuss projects, or just have a chat.
+          </p>
+          <h3>
+            <a href="mailto:sabeeh.hassany@gmail.com" class="text-white text-decoration-none">sabeeh.hassany@gmail.com</a>
+          </h3>
+        </div>
+      </div>
+
+      <!-- Footer Credit Section -->
+      <div class="row">
+        <p>©2024 Sabeeh Hassany. All Rights Reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <section> 
+    <script src="js/jquery-1.11.0.min.js"></script> <!-- jquery file-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> <!--cdn link-->
+    <script src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
+  </section>
+  
+</body>
+
+</html>
